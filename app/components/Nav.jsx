@@ -1,8 +1,7 @@
 var React = require('react');
 var {Link, IndexLink} = require('react-router');
 
-var Nav = React.createClass({
-  render: function(){
+var Nav = () => {
     return (
       <div className="top-bar">
         <div className="top-bar-left">
@@ -12,7 +11,7 @@ var Nav = React.createClass({
               <IndexLink to="/" activeClassName="active-link" >Timer</IndexLink>
             </li>
             <li>
-              <Link to="/Countdown" activeClassName="active-link" >Countdown</Link>
+              <Link to="/countdown" activeClassName="active-link" >Countdown</Link>
             </li>
           </ul>
         </div>
@@ -21,12 +20,12 @@ var Nav = React.createClass({
           <ul className="menu">
             <li className="menu-text">Made By
               <a href="http://176.32.230.22/drool.com/" target="_blank"> Laura Veee</a>
-              </li>
+            </li>
           </ul>
         </div>
       </div>
     );
-  }
-});
+};
+
 
 module.exports = Nav;
