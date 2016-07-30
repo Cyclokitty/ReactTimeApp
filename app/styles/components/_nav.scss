@@ -1,5 +1,6 @@
 .top-bar, .top-bar ul {
   background-color: $nav-background;
+  color: $nav-bar-text;
 }
 
 .top-bar {
@@ -7,10 +8,16 @@
     color: $nav-text-color;
   }
   .menu > .menu-text > a {
+    color: $nav-bar-text;
     display: inline;
     padding: 0;
   }
   .active-link {
     font-weight: bold;
+    color: $nav-bar-text;
   }
+}
+
+#link {
+  color: $nav-bar-text;
 }
